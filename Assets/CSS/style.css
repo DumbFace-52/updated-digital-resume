@@ -39,9 +39,9 @@
         --COLOR-PRIMARY: whitesmoke;
         --COLOR-SECONDARY: aliceblue;
         --COLOR-TERTIARY: lightgray;
-        --BGC: gray;
-        --BGC-FADE: rgb(156, 151, 144);
-        --BGI: linear-gradient(to bottom, #0a0a0a, var(--BGC), var(--BGC-FADE));
+        --BGC: rgb(153, 118, 5);;
+        --BGC-FADE: goldenrod;
+        --BGI: linear-gradient(to bottom, #0a0a0a, var(--BGC), var(--BGC-FADE), #0a0a0a);
         --BOX-SHADOW: 10px 0 20px rgba(255, 255, 255, 0.125);
     }
 }
