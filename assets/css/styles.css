@@ -255,7 +255,7 @@ body {
     bottom: 0;
     background: linear-gradient(to right, #00093c, #2d0b8b, #2d0b00);
     color: #fff;
-    padding: 20px 0 10px;
+    padding: 100px 0 10px;
     border-top-right-radius: 125px;
     font-size: 13px;
     line-height: 20px;
@@ -357,6 +357,12 @@ form button .fas {
     background: #fff;
     margin-right: 15px;
     cursor: pointer;
+}
+
+.social-icons .fab:hover {
+    background: #000;
+    color: #fff;
+    transition: 0.5s;
 }
 
 hr {
