@@ -1443,7 +1443,7 @@ hr {
 
 /* Landscape Orientation */
 @media (max-width: 600px) and (orientation: landscape) {
-  /* Adjust Navbar Section */
+  /* Navbar Section */
   #nav {
     flex-direction: row; /* Switch back to horizontal layout */
     justify-content: space-between; /* Adjust navbar items */
@@ -1455,7 +1455,7 @@ hr {
     gap: 15px; /* Adjust spacing between items */
   }
 
-  /* Adjust Header Section */
+  /* Header Section */
   #header {
     flex-direction: row;
     justify-content: space-between;
@@ -1481,7 +1481,7 @@ hr {
     gap: 10px; /* Adjust gap between icons */
   }
 
-  /* Adjust Sidebar Section */
+  /* Sidebar Section */
   #sidebar {
     display: block; /* Show sidebar in landscape mode */
   }
@@ -1491,7 +1491,7 @@ hr {
     padding: 10px;
   }
 
-  /* Adjust Contact Section */
+  /* Contact Section */
   #contact .contact-container {
     flex-direction: row; /* Horizontal layout */
     gap: 30px; /* Increase gap */
