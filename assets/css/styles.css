@@ -766,6 +766,7 @@ body:hover .back-to-top {
   height: 150px;
   padding: 15px 25px;
   border-radius: 20px;
+  margin-left: 10px;
 }
 
 /* Input Focus */
