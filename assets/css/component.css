@@ -1,0 +1,356 @@
+/* || GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caprasimo&family=Grenze+Gotisch:wght@100..900&family=Indie+Flower&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Knewave&family=Markazi+Text:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oleo+Script:wght@400;700&family=Pacifico&family=Patrick+Hand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tillana:wght@400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* || RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || UTILITIES */
+.off-screen {
+  position: absolute;
+  left: -9999px;
+}
+
+.flex {
+  display: flex;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* || VARIABLES */
+:root {
+  /* || Font */
+  --FF: 'Ubuntu', serif;
+
+  /* || Color */
+  --TEXTCOLOR: #060606;
+  --TEXTCOLOR2: #00000062;
+  --LINKCOLOR: #c2c0bf;
+  --LINKCOLOR2: #0c0c0c;
+  --BGC: #fde9ce;
+
+  /* || Gradient */
+  --BG: linear-gradient(to bottom right, #fcaca2, #fad090, #faeaef);
+  --BG2: linear-gradient(to top left, #f5f5f5, #c0b6b6, #faf0e6);
+  --BG3: linear-gradient(135deg, #fadd8f, #f3afaf, #f7e5c5);
+
+  /* || Others */
+  --BTN: linear-gradient(to bottom left, #fae7ce, #fcfcd4);
+  --BTN2: linear-gradient(to top right, #fae1e1, #fad5c4);
+  --BOX-SHADOW: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* || GENERAL CSS */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--FF);
+}
+
+body {
+  background-color: var(--BGC);
+  background: var(--BG);
+  color: var(--TEXTCOLOR);
+  transition: var(--transition);
+}
+
+a {
+  text-decoration: none;
+  color: var(--LINKCOLOR2);
+}
+
+/* Navigation */
+#navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--BGC);
+  background: var(--BG3);
+  transition: all 1s ease;
+  box-shadow: var(--BOX-SHADOW);
+  opacity: 0;
+  animation: fadeIn 5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#navbar:hover {
+  background: var(--BG);
+  box-shadow: none;
+  transition: all 1s ease;
+}
+
+#navbar .nav-links {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+  opacity: 0;
+  animation: fadeIn 7s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 20px;
+  transition: all 1s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background: var(--BG);
+  color: var(--TEXTCOLOR2);
+  border-radius: 20px;
+  box-shadow: var(--BOX-SHADOW);
+}
+
+.nav-link:active {
+  color: var(--TEXTCOLOR);
+  background: transparent;
+}
+
+/* Projects Section */
+#projects {
+  padding: 2rem;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  opacity: 0; /* Start with the text hidden */
+  animation: fadeIn 10s ease-out forwards; /* Fade-in duration and easing */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--BGC);
+  background: var(--BG);
+  border-radius: 15px;
+  box-shadow: var(--BOX-SHADOW);
+  transition: all 1.5s ease;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card:hover,
+.card:focus {
+  background: var(--BG);
+  box-shadow: none;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: all 1s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.card-content p a:hover,
+.card-content p a:focus {
+  color: var(--TEXTCOLOR2);
+  transition: all 0.5s ease;
+}
+
+.card-content p a:focus {
+  color: var(--LINKCOLOR2);
+  background: transparent;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  margin: 80px 0;
+}
+
+.pagination a {
+  color: var(--LINKCOLOR);
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  background-color: var(--BGC);
+  box-shadow: var(--BOX-SHADOW);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+/* Active Page Style */
+.pagination a:hover,
+.pagination a:active {
+  background: var(--BG);
+  color: var(--LINKCOLOR2);
+  cursor: pointer;
+}
+
+.pagination p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+/* Footer */
+#footer {
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--BGC);
+  background: var(--BG3);
+  border-top-left-radius: 20px;
+}
+
+#footer p {
+  font-weight: 600;
+}
+
+#footer:hover {
+  background: var(--BG); /* Change background on hover */
+}
+
+/* || MEDIA QUERRY */
+@media (max-width: 1024px) {
+  /* Adjust card layout for medium screens */
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .nav-links {
+    font-size: 1rem;
+  }
+
+  /* Adjust pagination font size */
+  .pagination {
+    font-size: 0.9rem;
+  }
+
+  .pagination a {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stack navbar links vertically on smaller screens */
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Adjust padding and layout for smaller screen */
+  #projects {
+    padding: 1rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  /* Adjust pagination on smaller screens */
+  .pagination {
+    font-size: 0.8rem;
+    gap: 0.5rem;
+  }
+
+  .pagination a {
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further reduce font size for smaller screens */
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+
+  /* Make cards full width */
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Adjust padding for smaller screens */
+  #projects {
+    padding: 0.5rem;
+  }
+
+  /* Adjust pagination on very small screens */
+  .pagination {
+    font-size: 0.7rem;
+    gap: 0.3rem;
+  }
+
+  .pagination a {
+    padding: 0.3rem 0.6rem;
+  }
+}

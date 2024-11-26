@@ -3,35 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Code Dumbface">
-    <meta name="description" content="This is the Projects section for digital resume.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Code Dumbface">
+    <meta name="description" content="This is the Projects section for the digital resume.">
     <title>Projects - Digital Resume</title>
-    <!-- Font Awesome (Latest Version) -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/Favicon/favicon.ico" type="image/x-icon">    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <!-- Boxicons CSS -->
-    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
     <!-- Google Material Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="../assets/Favicon/favicon.ico" type="image/x-icon">
     <!-- External CSS -->
-    <link rel="stylesheet" href="../assets/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/component.css">
     <!-- External Script -->
-    <script src="../assets/js/script.js"></script>
 </head>
 <body>
-    <!-- Body Section -->
     <!-- Navigation -->
-    <nav id="nav" class="sec--page">
-        <h2 class="nav--title">PROJECTS</h2>
-        <ul class="nav--ul">            
-            <li title="Home"><a href="../index.html" class="nav-link"><i class="fas fa-home"></i></a></li>
-            <li title="Resume"><a href="../index.html#main" class="nav-link"><i class="fas fa-folder"></i></a></li>
-            <li title="Contact"><a href="../index.html#contact" class="nav-link"><i class="fas fa-envelope"></i></a></li>
-            <li title="Projects"><a href="project.html" class="nav-link"><i class="fas fa-briefcase"></i></a></li>
-            <li title="About"><a href="about.html" class="nav-link"><i class="fas fa-user"></i></a></li>
-        </ul>        
+    <nav id="navbar">
+        <ul class="nav-links">
+            <li><a href="../index.html" class="nav-link" title="Home"><i class="fas fa-home"></i></a></li>
+            <li><a href="../index.html#main" class="nav-link" title="Resume"><i class="fas fa-folder"></i></a></li>
+            <li><a href="about.html" class="nav-link" title="About"><i class="fas fa-user"></i></a></li>
+            <li><a href="../index.html#contact" class="nav-link" title="Contact"><i class="fas fa-envelope"></i></a></li>
+        </ul>
     </nav>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="card-container">
+            <!-- Project Cards -->
+            <!-- Card 1 -->
+            <div class="card">
+                <img 
+                    src="../html/img/spacehub.png" 
+                    alt="Project 1"
+                    width="300"
+                    height="200"
+                    loading="lazy"
+                    title="SpaceHub"
+                >
+                <div class="card-content">
+                    <p>
+                        <a href="https://spacehub2.netlify.app/" target="_blank">
+                            SpaceHub
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://spacehub2.netlify.app/" target="_blank">View Live Demo</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img 
+                    src="../html/img/cv.png" 
+                    alt="Project 2"
+                    width="300"
+                    height="200"
+                    loading="lazy"
+                    title="Digital Resume"
+                >
+                <div class="card-content">
+                    <p>
+                        <a href="https://dumbface-52.github.io/digital-resume/" target="_blank">
+                            Simple Digital Resume
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://dumbface-52.github.io/digital-resume/" target="_blank">View Live Demo</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img 
+                    src="../html/img/portfolio.png" 
+                    alt="Project 3"
+                    width="300"
+                    height="200"
+                    loading="lazy"
+                    title="Portfolio"
+                >
+                <div class="card-content">
+                    <p>
+                        <a href="https://updated-digital-resume.vercel.app/" target="_blank">
+                            Portfolio
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://updated-digital-resume.vercel.app/" target="_blank">View Live Demo</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img 
+                    src="../html/img/git.png" 
+                    alt="Project 4"
+                    width="300"
+                    height="200"
+                    loading="lazy"
+                    title="Mini Projects"
+                >
+                <div class="card-content">
+                    <p>
+                        <a href="https://github.com/DumbFace-52" target="_blank">
+                            Version Control
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/DumbFace-52" target="_blank">View Live Demo</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+                <img 
+                    src="../html/img/food.png" 
+                    alt="Project 5"
+                    width="300"
+                    height="200"
+                    loading="lazy"
+                    title="Food Website"
+                >
+                <div class="card-content">
+                    <p>
+                        <a href="https://github.com/DumbFace-52/Little-Taco-Shop" target="_blank">
+                            Food Website( In Progress...)
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/DumbFace-52/Little-Taco-Shop" target="_blank">View Live Demo</a>
+                    </p>
+                </div>
+            </div>    
+
+            <!-- Card 6 -->
+            <div class="card">
+                <img 
+                    src="https://via.placeholder.com/300x200" 
+                    alt="Project 6"
+                    width="300"
+                    height="200"
+                    loading="lazy"
+                    title="Shopping Cart"
+                >
+                <div class="card-content">
+                    <p>
+                        <a href="https://github.com/DumbFace-52" target="_blank">
+                            Shopping Cart( In Progress...)
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/DumbFace-52" target="_blank">View Live Demo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination Section -->
+        <div class="pagination">
+            <a href="#" class="prev-page" title="Previous Page" aria-disabled="true">Previous</a>
+            <a href="#" class="page-num" data-page="1">1</a>
+            <a href="#" class="page-num" data-page="2">2</a>
+            <a href="#" class="next-page" title="Next Page">Next</a>
+            <p>Page <span id="current-page">1</span> of <span id="total-pages">2</span></p>
+        </div>       
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2024 Code Dumbface. All rights reserved.</p>
+    </footer>
 </body>
 </html>
