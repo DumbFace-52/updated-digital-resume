@@ -44,15 +44,15 @@
 
   /* COLORS */
   --PRIMARY-C: #060606;
-  --SECONDARY-C: #808080;
-  --TERTIARY-C: #afa9a9;
+  --SECONDARY-C: #241e1e;
+  --TERTIARY-C: #666464;
 
   /* GRADIENT */
   --BGC: linear-gradient(to bottom right, #ff9a8b, #ffc3a0, #fcf1f04f);
   --BGC2: linear-gradient(120deg, #fff1b8, #ffd6e8);
   --BGC3: linear-gradient(135deg, #ff4e50, #f9d423);
   --BGC-FADE: linear-gradient(90deg, #ffc3a0, #ff9a8b);
-  --BGC-FADE2: linear-gradient(120deg, lavenderblush, #fff9c4, #d499cb);
+  --BGC-FADE2: linear-gradient(120deg, #c0a0ab, #fff9c4, #630655);
 
   /* GENERAL */
   --BOX-SHADOW: 5px 0 10px rgb(124, 71, 1);
