@@ -70,17 +70,23 @@
     --TERTIARY-C: #fae2c2;
 
     /* GRADIENT */
-    --BGC: linear-gradient(to bottom right, #382f229f, #111111, #fdbf03);
+    /* --BGC: linear-gradient(to bottom right, #382f229f, #111111, #fdbf03);
     --BGC2: linear-gradient(120deg, #382f229f, #111111, #fdbf03);
     --BGC3: linear-gradient(135deg, #130800, #afafac);
     --BGC-FADE: linear-gradient(to top left, #382f229f, #111111, #fdbf03);
-    --BGC-FADE2: linear-gradient(120deg, #f3f1ee9f, #111111, #f1c130);
+    --BGC-FADE2: linear-gradient(120deg, #f3f1ee9f, #111111, #f1c130); */
+
+    --BGC: linear-gradient(to bottom right, #c4c0bc9f, #000000, #7e7c78);
+    --BGC2: linear-gradient(120deg, #4b48459f, #111111, #aaa8a1);
+    --BGC3: linear-gradient(135deg, #1d1d1c, #afafac, #7e7c78);
+    --BGC-FADE: linear-gradient(to top left, #1311119f, #696868, #292725);
+    --BGC-FADE2: linear-gradient(120deg, #f3f1ee9f, #111111, #79756c);
 
     /* GENERAL */
     --BOX-SHADOW: 5px 0 10px rgb(243, 235, 224);
     --BTN-BGC1: linear-gradient(to bottom right, #f5f0f0, #140800);
-    --BTN-BGC2: linear-gradient(45deg, #f1eb8a, #0f0f0f);
-    --BTN-BGC3: linear-gradient(to bottom, #fcd143, #4e3602);
+    --BTN-BGC2: linear-gradient(45deg, #a0a09f, #0f0f0f);
+    --BTN-BGC3: linear-gradient(to bottom, #fafaf9, #5a5a5a);
   }
 }
 
@@ -1050,7 +1056,7 @@ ul li a:focus {
 
 ul li a:active,
 form button:active {
-  color: #dbe9fc;
+  color: #f2f4f8;
 }
 
 form {
@@ -1071,7 +1077,7 @@ form input {
   width: 100%;
   background: transparent;
   margin-left: 10px;
-  color: var(--PRIMARY-C);
+  color: var(--SECONDARY-C);
   border: 0;
   outline: none;
 }
