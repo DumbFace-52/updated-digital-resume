@@ -55,10 +55,11 @@
   --BGC-FADE2: linear-gradient(120deg, #c0a0ab, #fff9c4, #630655);
 
   /* GENERAL */
-  --BOX-SHADOW: 5px 0 10px rgb(124, 71, 1);
+  --BOX-SHADOW: 0 3px 6px rgba(0, 0, 0, 0.5);
   --BTN-BGC1: linear-gradient(to bottom right, #ff9a8b, #ffc3a0);
   --BTN-BGC2: linear-gradient(45deg, #56ccf2, #2f80ed);
   --BTN-BGC3: linear-gradient(to bottom, #d76d77, #3a1c71);
+  --BGC-HR: linear-gradient(to right, #868484, #5f5d5d, #070707);
 }
 
 /* || Dark Mode */
@@ -70,23 +71,34 @@
     --TERTIARY-C: #fae2c2;
 
     /* GRADIENT */
-    /* --BGC: linear-gradient(to bottom right, #382f229f, #111111, #fdbf03);
-    --BGC2: linear-gradient(120deg, #382f229f, #111111, #fdbf03);
-    --BGC3: linear-gradient(135deg, #130800, #afafac);
-    --BGC-FADE: linear-gradient(to top left, #382f229f, #111111, #fdbf03);
-    --BGC-FADE2: linear-gradient(120deg, #f3f1ee9f, #111111, #f1c130); */
-
-    --BGC: linear-gradient(to bottom right, #c4c0bc9f, #000000, #7e7c78);
-    --BGC2: linear-gradient(120deg, #4b48459f, #111111, #aaa8a1);
-    --BGC3: linear-gradient(135deg, #1d1d1c, #afafac, #7e7c78);
-    --BGC-FADE: linear-gradient(to top left, #1311119f, #696868, #292725);
-    --BGC-FADE2: linear-gradient(120deg, #f3f1ee9f, #111111, #79756c);
+    --BGC: linear-gradient(145deg, #121212, #1a1a1a); /* Dark gray gradient */
+    --BGC2: linear-gradient(
+      145deg,
+      #1f1f1f,
+      #2a2a2a
+    ); /* Slightly lighter gradient */
+    --BGC3: linear-gradient(
+      145deg,
+      #2e2e2e,
+      #3a3a3a
+    ); /* Even lighter gradient */
+    --BGC-FADE: linear-gradient(
+      145deg,
+      rgba(18, 18, 18, 0.9),
+      rgba(32, 33, 36, 0.9)
+    ); /* Faded gradient */
+    --BGC-FADE2: linear-gradient(
+      145deg,
+      rgba(18, 18, 18, 0.7),
+      rgba(50, 50, 50, 0.7)
+    ); /* Lighter faded gradient */
 
     /* GENERAL */
     --BOX-SHADOW: 5px 0 10px rgb(243, 235, 224);
     --BTN-BGC1: linear-gradient(to bottom right, #f5f0f0, #140800);
     --BTN-BGC2: linear-gradient(45deg, #a0a09f, #0f0f0f);
     --BTN-BGC3: linear-gradient(to bottom, #fafaf9, #5a5a5a);
+    --BGC-HR: linear-gradient(to right, #dddbdb, #7a7878, #c5c5c5);
   }
 }
 
@@ -577,7 +589,7 @@ p {
 #resume hr {
   border: 0;
   height: 10px;
-  background-color: var(--PRIMARY-C);
+  background-color: var(--BGC-HR);
   margin: 10px 0;
   position: relative;
 }
@@ -614,7 +626,7 @@ p {
   left: 0;
   width: 100%;
   height: 3px;
-  background: var(--BGC2);
+  background: var(--BGC-HR);
   animation: loadingLine 10s linear infinite;
 }
 
